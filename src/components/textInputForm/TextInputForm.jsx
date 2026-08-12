@@ -2,7 +2,7 @@ import TextInput from "../TextInput/TextInput";
 import Button from "../Button/Button";
 
 // presentation component for TextInputForm
-function TextInputForm({handleFormSubmit, handleTextInputChange, value, inputType, setInputType}){
+function TextInputForm({handleFormSubmit, handleTextInputChange, value, inputType='password', setInputType}){
      
     return (
         <form className="flex items-end" onSubmit={handleFormSubmit}>
@@ -26,7 +26,7 @@ function TextInputForm({handleFormSubmit, handleTextInputChange, value, inputTyp
                 <Button 
                     styleType="primary"
                     text="OK"
-                    type="submit"
+                    buttonType="submit"
                 />
             </div>
         </form>

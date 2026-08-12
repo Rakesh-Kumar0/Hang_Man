@@ -1,10 +1,10 @@
-import TextInputForm from "./components/textInputForm/TextInputForm";
+import TextInputFormContainer from "./components/textInputForm/TextInputFormContainer";
 
 function App(){
   return (
     <div>
       <h1 className="font-semibold text-3xl">Welcome to Hangman</h1>
-      <TextInputForm />
+      <TextInputFormContainer onSubmit={(value) =>console.log("Value comming from the hidden form is" , value)} />
     </div>
   );
 }
