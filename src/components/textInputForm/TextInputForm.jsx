@@ -8,7 +8,7 @@ function TextInputForm({handleFormSubmit, handleTextInputChange, value, inputTyp
         <form className="flex items-end" onSubmit={handleFormSubmit}>
             <div className="mr-2 flex-1">
                 <TextInput 
-                    label="Enter a word and phrase"
+                    label="Enter a word or phrase"
                     type={inputType}
                     value={value}
                     onChange={handleTextInputChange}
